@@ -1,0 +1,23 @@
+function anagram(word1, word2) {
+  // Code here!
+  var out = false;
+  i = 0;
+  y = 0;
+ let wd1 = word1; 
+ let wd2 = word2;
+  
+  for(let value of wd1 ){
+    console.log(value)
+    console.log(wd2[i])
+    if(value === wd2[i]){
+      out = true;
+    }
+  }
+for(let value of wd2 ){
+    if(value === wd1[i]){
+      out = true; 
+    }
+}
+  return out;
+}
+ anagram('zeke', 'hello world');
